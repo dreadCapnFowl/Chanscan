@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <title>4scan</title>
+  </head>
+  <body>
+    <div class="updates" id="updates">
+    </div>
+    <div class="thread_display" id="thread_display">
+    </div>
+
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+  </body>
+</html>
+
+<style>
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.updates {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  width: 400px;
+}
+.thread_display {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  width: 100%;
+}
+.postcontent {
+  display: flex;
+}
+.thread {
+  display: flex;
+  border-left-style: solid;
+  border-width: 2px;
+}
+.reply {
+  display: flex;
+}
+
+.image {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+</style>
